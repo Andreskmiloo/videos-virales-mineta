@@ -12,8 +12,9 @@
 6. **Mira cada video entero** en `output/<id>/video.mp4`. ¿Se oye bien? ¿Engancha en 2 s?
 7. **Sube programado** (1–3 al día, horas distintas):
    `python main.py upload output/<id> --publish-at 2026-11-22T15:00:00Z`
-8. **A las 24–48 h** mira en YouTube Studio: retención, % que desliza, comentarios.
-   Cuéntaselo a Claude para que los próximos guiones copien lo que funcionó.
+8. **A las ~48 h** apunta en `docs/RESULTADOS.csv` lo que dice YouTube Studio (shown in feed,
+   viewed vs swiped, % medio visto, likes…) y compáralo con `docs/VIRALIDAD.md`.
+   Claude lee ese archivo antes de escribir guiones nuevos para copiar lo que funcionó.
 9. Si llega un claim/strike → apúntalo en `docs/STRIKES.md`.
 
 ## Consejos
