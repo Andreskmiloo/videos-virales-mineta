@@ -72,6 +72,13 @@ con ideas originales y actuales, hecho de forma casi automática para crecer y m
   ("What if", crossovers, quizzes, historias en 30 s), que llegan hasta 175× de breakout y 3,6%
   de interacción con riesgo de copyright casi cero.
 
+## Estrategia de nicho y canales (detalle en `docs/ESTRATEGIA.md`)
+- Decisión: **empezar con UN canal de fútbol**. Finanzas/tecnología pagan 2–4× más por vista
+  en Shorts, pero el fútbol tiene muchísimo más volumen y el programa ya está hecho para él.
+- Segundo canal solo tras el hito: ~30 videos + un breakout ≥10× o 1.000 subs. Candidato:
+  "Football × money" (hipótesis por validar). Varios canales = OK con una sola cuenta de AdSense.
+- Más adelante: compilaciones largas de 8–10 min para cobrar el RPM de video largo.
+
 ## vidIQ (detalle y presupuesto en `docs/VIDIQ.md`)
 - Plan de **150 créditos/mes** (se renueva el día 21); casi todo cuesta 5 y ver un video 10–25.
   Mirar `vidiq_balance` (gratis) antes de gastar y seguir el presupuesto de `docs/VIDIQ.md`.
