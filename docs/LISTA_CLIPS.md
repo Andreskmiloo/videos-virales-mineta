@@ -1,5 +1,16 @@
 # Lista de clips (en orden de producción)
 
+## Calidad de los clips (leer antes de buscar)
+- **Versión original y horizontal**, 1080p o más, 30/60 fps. El programa la encaja en Short y en largo.
+- **Evitar re-subidas de TikTok/Reels**: suelen tener marca de agua (YouTube las penaliza), están recortadas
+  en vertical (en el video largo se pierde la jugada), están recomprimidas y casi siempre son la edición de
+  otra persona (eso sí que es "contenido reutilizado" y además acumula reclamaciones).
+- Sin música añadida, sin texto ni logos de otros canales encima.
+- Cortar sin volver a comprimir si se puede (p. ej. `ffmpeg -ss INICIO -to FIN -i original.mp4 -c copy 15.mp4`).
+- Anotar el segundo del gol como `"key"` en el guion (los Shorts se centran ahí).
+- Los clips se quedan en el PC, en `clips/<id>/`. **Nunca se suben a GitHub** (pesan, tienen copyright y están en `.gitignore`).
+
+
 Marca cada clip al guardarlo. Shorts: 5–10 s del momento clave. Largo Puskás: 25–32 s (jugada + gol + 1 repetición).
 Los Shorts del Puskás (_p1–_p4) usan los clips del largo: **no hay que buscarlos dos veces**.
 **Guarda siempre el momento COMPLETO** (los comentarios se quejan cuando se corta el gol).
