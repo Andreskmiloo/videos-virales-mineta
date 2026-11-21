@@ -88,3 +88,25 @@ Los Shorts del Puskás (_p1–_p4) usan los clips del largo: **no hay que buscar
 - [ ] `3.mp4` — Referee sprinting across the pitch to reach players
 - [ ] `2.mp4` — Pierluigi Collina intense stare at players
 - [ ] `1.mp4` — Referee calmly standing while players protest around him (e.g. Collina, Webb)
+
+
+## Ronaldo vs Messi vs Yamal vs Mbappé vs Haaland: Best Finish?  ·  `clips/2026-12-03_icons-best-finish-vs/`  ·  4–6 s (VS/iconos: cortos)
+- [ ] `5.mp4` — Haaland flying volley/scissor goal, Man City vs Dortmund, Champions League Sept 2022
+- [ ] `4.mp4` — Mbappé volley for his 2nd goal, Argentina vs France, World Cup final 2022
+- [ ] `3.mp4` — Lamine Yamal curler vs France, Euro 2024 semifinal
+- [ ] `2.mp4` — Messi free kick vs Liverpool, Barcelona 3-0, Champions League semifinal 2019
+- [ ] `1.mp4` — Cristiano Ronaldo bicycle kick vs Juventus, Champions League quarterfinal 2018 (incl. Juve fans applauding)
+
+## Lamine Yamal Did THIS Before 18  ·  `clips/2026-12-04_yamal-did-this-at-17/`  ·  4–6 s (VS/iconos: cortos)
+- [ ] `5.mp4` — Lamine Yamal first La Liga goal, Granada vs Barcelona, Oct 2023
+- [ ] `4.mp4` — Lamine Yamal goal, Real Madrid 0-4 Barcelona, Bernabéu, Oct 2024
+- [ ] `3.mp4` — Lamine Yamal assist to Nico Williams, Spain vs England, Euro 2024 final
+- [ ] `2.mp4` — Lamine Yamal curler vs Espanyol that clinched La Liga, May 2025
+- [ ] `1.mp4` — Lamine Yamal solo goal vs Inter, Champions League semifinal 1st leg, Apr 2025
+
+## Respect Moments: Ronaldo, Messi, Neymar, Mbappé  ·  `clips/2026-12-05_icons-respect-moments/`  ·  4–6 s (VS/iconos: cortos)
+- [ ] `5.mp4` — Ronaldo stopping security so a young pitch invader can take a selfie (verificar el clip)
+- [ ] `4.mp4` — Ivan Perišić's son hugging Neymar after Croatia vs Brazil, World Cup 2022
+- [ ] `3.mp4` — Mbappé consoling Achraf Hakimi, France vs Morocco, World Cup 2022 semifinal
+- [ ] `2.mp4` — Shirt swap / hug between two current icons after a big match (verificar el clip)
+- [ ] `1.mp4` — Messi hugging a crying Neymar after Argentina vs Brazil, Copa América final, Maracanã, July 2021

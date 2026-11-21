@@ -114,6 +114,12 @@ Ideas originales y actuales, hecho de forma casi automática para crecer y monet
 - Formato recomendado: largo de 8–10 min (≥8 para anuncios a mitad de video) + 4 Shorts; no 15 min.
 - vidIQ: créditos casi agotados hasta el 21-dic → usar búsqueda web.
 
+## Clave viral con iconos (detalle en `docs/CLAVE_VIRAL_ICONOS.md`)
+- Lo que más vistas junta ahora: títulos que apilan los nombres más buscados (Ronaldo, Messi, Yamal, Neymar, Mbappé,
+  Haaland + uno joven como Yildiz), Shorts de 6–25 s, ganchos "respect", "VS", "find the player", "X ruined Y".
+  Para EE.UU., Messi siempre. Lo hacemos con voz propia (las granjas sin voz no cobran esas vistas).
+- No usar animaciones IA con caras de jugadores reales.
+
 ## Piloto nov-2026 → ene-2027 (detalle en `docs/PLAN_PILOTO.md`)
 - Se usa el canal que ya tiene el usuario (`UCdHWzgDZoQbgBDDFXYvcvXQ`, casi vacío): se rehace desde cero en inglés.
   No escribir el nombre personal del usuario en ningún archivo.

@@ -22,7 +22,9 @@ Plan completo y bloques de prueba en `docs/PLAN_PILOTO.md`.
 | Lun 30-nov 7:00 pm | `2026-11-21_players-forgot-ball` | Top Soccer Players Who Forgot How The Ball Works 💀 | `2026-12-01T00:00:00Z` |
 | Mar 1-dic 7:00 pm | `2026-11-21_defenders-polite-violence` | Top Soccer Defenders Who Chose Violence Politely 💀 | `2026-12-02T00:00:00Z` |
 | Mié 2-dic 7:00 pm | `2026-11-21_referees-wanted-to-play` | Top Soccer Referees Who Wanted To Play 😭⚽ | `2026-12-03T00:00:00Z` |
-| Jue 3 – sáb 5-dic 7:00 pm | 3 Shorts nuevos de leyendas (Claude los escribe para el finde 28–29 nov) | — | `2026-12-04T00:00:00Z` · `…05…` · `…06…` |
+| Jue 3-dic 7:00 pm | `2026-12-03_icons-best-finish-vs` | Ronaldo vs Messi vs Yamal vs Mbappé vs Haaland: Best Finish? 🤯⚽ | `2026-12-04T00:00:00Z` |
+| Vie 4-dic 7:00 pm | `2026-12-04_yamal-did-this-at-17` | Lamine Yamal Did THIS Before 18 😳⚽ | `2026-12-05T00:00:00Z` |
+| Sáb 5-dic 7:00 pm | `2026-12-05_icons-respect-moments` | Respect Moments: Ronaldo, Messi, Neymar, Mbappé 🤝😭 | `2026-12-06T00:00:00Z` |
 
 **Fin de semana 21–22 nov:** hacer los Shorts del sáb 21 al vie 27 y el largo Puskás.
 **Fin de semana 28–29 nov:** hacer los del sáb 28 al sáb 5 de diciembre.
