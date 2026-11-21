@@ -9,7 +9,7 @@ Detalle y fuentes: `VIRALIDAD.md`, `NICHOS.md`, `TITULOS.md`, `ESTRATEGIA.md`.
 4. **Final que provoca**: pregunta ("Who deserved #1?") + corte que vuelve al inicio (loop).
 5. **"Soccer" en el título**, nunca "Football". Fórmula: `Top [adjetivo meme] [situación] 💀😭`, ≥75 en vidIQ.
 6. **Temas de actualidad + leyendas**: Messi, USMNT, jugadores del momento. El momento clave, completo.
-7. **Constancia**: 1–2 Shorts/día (6–9 pm ET) + 1 largo semanal de 8–10 min del que salen 4 Shorts.
+7. **Constancia > volumen**: 1 Short al día (7 pm ET) + 1 largo de 8–10 min cada 2 semanas, del que salen 4 Shorts (`PLAN_PILOTO.md`).
 
 ## ¿Pegó? (a las 48 h)
 | Métrica | Viral |

@@ -114,6 +114,15 @@ Ideas originales y actuales, hecho de forma casi automática para crecer y monet
 - Formato recomendado: largo de 8–10 min (≥8 para anuncios a mitad de video) + 4 Shorts; no 15 min.
 - vidIQ: créditos casi agotados hasta el 21-dic → usar búsqueda web.
 
+## Piloto nov-2026 → ene-2027 (detalle en `docs/PLAN_PILOTO.md`)
+- Se usa el canal que ya tiene el usuario (`UCdHWzgDZoQbgBDDFXYvcvXQ`, casi vacío): se rehace desde cero en inglés.
+  No escribir el nombre personal del usuario en ningún archivo.
+- Ritmo: **1 Short al día (7 pm ET) + 1 largo cada 2 semanas (domingo 3 pm ET)**. Todo se hace en lote el fin de semana
+  (4–8 h) y se programa. Fechas en `docs/CALENDARIO.md`.
+- Se prueba una variable cada 2 semanas: leyendas → actualidad → fin de año → conceptos originales → repetir el ganador.
+- **31-ene: decisión.** Formalizar si hay un Short con ≥10× o >10K vistas, o viewed vs swiped ≥70% en 3+ Shorts,
+  o ≥300 subs. Ajustar si el % medio visto es ≥70%. Repensar si casi todo queda <50%.
+
 ## Estructura del proyecto
 - `main.py` — CLI: `check`, `render`, `split`, `upload`, `write`.
 - `src/` — `tts.py` (voz edge-tts + tiempos por palabra), `graphics.py` (caja de título + lista de

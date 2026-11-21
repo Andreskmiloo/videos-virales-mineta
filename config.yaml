@@ -4,7 +4,7 @@ channel:
   handle: "@yourhandle"
   # ID of YOUR channel (starts with UC...). upload refuses to post if the
   # logged-in account does not own this channel. Leave empty to skip the check.
-  channel_id: ""
+  channel_id: "UCdHWzgDZoQbgBDDFXYvcvXQ"
 
 # ---- Voice (text-to-speech) ----
 voice:

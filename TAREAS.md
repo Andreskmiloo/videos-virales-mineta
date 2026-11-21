@@ -17,10 +17,15 @@ Formato: `- [ ] tarea — responsable — notas`. Al acabar: `- [x]` + qué se h
 3. No reescribir lo que hizo la otra IA sin motivo; si algo está mal, anotarlo aquí.
 4. Reglas no negociables: las de `CLAUDE.md` (anti-strike, no evadir baneos, revisión humana, no commitear clips ni credenciales).
 
+## Piloto 21-nov → 31-ene (ver `docs/PLAN_PILOTO.md`)
+Ritmo: 1 Short al día (7 pm ET) + 1 largo cada 2 semanas (domingo 3 pm ET), todo en lote el fin de semana.
+
 ## En curso
+- [ ] Dejar el canal listo (checklist A de `docs/PLAN_PILOTO.md`) y poner nombre y @ en `config.yaml` — humano
+- [ ] Finde 21–22 nov: Shorts del 21 al 27 + largo Puskás, según `docs/SPRINT_FIN_DE_SEMANA.md` — humano
 - [ ] Clips en el orden de `docs/LISTA_CLIPS.md` y publicación según `docs/CALENDARIO.md` — humano
-- [ ] Conseguir clips para el sprint del fin de semana — humano — ver `docs/SPRINT_FIN_DE_SEMANA.md`
 - [ ] Primer render real en el PC (con voz edge-tts) y reportar errores — humano + Codex
+- [ ] Cada domingo: métricas a 48 h en `docs/RESULTADOS.csv` — humano
 
 ## Pendiente (visual + código) — Codex (prioridad en `docs/GUIA_VISUAL.md`)
 - [ ] Fuente con más impacto (Anton/Bebas/Montserrat ExtraBold en `assets/fonts/`) — Codex
@@ -31,12 +36,15 @@ Formato: `- [ ] tarea — responsable — notas`. Al acabar: `- [x]` + qué se h
 - [ ] Música de fondo opcional desde la biblioteca de audio de YouTube (archivo local en `assets/music/`, volumen bajo) — Codex
 - [ ] Zoom suave (punch-in) en el momento clave (campo `key` por item, ya existe) — Codex
 - [ ] Tests básicos: `load_script`, `split`, `captions.write_ass` (pytest) — Codex
-- [ ] Plantilla **quiz** ("Guess the player"): cuenta atrás + respuesta revelada — Claude diseña, Codex implementa
+- [ ] Plantilla **quiz** ("Guess the player"): cuenta atrás + respuesta revelada — Claude diseña, Codex implementa — **lista antes del 2-ene** (bloque de conceptos originales)
 
-## Pendiente (contenido) — Claude
+## Pendiente (contenido) — Claude (según el calendario de pruebas de `docs/PLAN_PILOTO.md`)
+- [ ] Finde 28–29 nov: 3 Shorts nuevos de leyendas para el 3, 4 y 5 de diciembre
+- [ ] Finde 5–6 dic: Shorts de **actualidad** (Messi/Inter Miami, USMNT, figuras del momento) para los días libres del bloque 2
 - [ ] Tras los nominados oficiales del Puskás: guion "Official Puskás 2026 Nominees, Ranked"
-- [ ] Guion de la idea #2: "Every USMNT Goal at the 2026 World Cup, Ranked"
-- [ ] Guion de la idea #3: "Funniest Soccer Moments of 2026 (Ranked)"
+- [ ] Finde 19–20 dic: largo "Funniest Soccer Moments of 2026 (Ranked)" (idea #3) + Shorts de fin de año
+- [ ] Finde 2–3 ene: largo "Every USMNT Goal at the 2026 World Cup, Ranked" (idea #2) + Shorts quiz/"What if"
+- [ ] 30–31 ene: informe de decisión con los datos de `docs/RESULTADOS.csv` (punto D del plan)
 - [ ] Analizar las primeras métricas (`docs/RESULTADOS.csv`) y ajustar guiones
 
 ## Hecho

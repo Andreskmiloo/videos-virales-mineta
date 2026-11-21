@@ -1,45 +1,43 @@
-# Sprint de fin de semana: canal funcionando el domingo por la noche
+# Primer fin de semana del piloto (21–22 nov)
 
-Objetivo realista: el domingo por la noche tener **1 video largo + 4–5 Shorts publicados** y
-**6–8 Shorts programados** para toda la semana. Las vistas de un canal que arranca llegan en tandas:
-YouTube prueba cada Short con poca gente y, si retiene, lo abre a más. **Constancia > subir 20 de golpe**
-(subir muchos iguales de una vez parece contenido masivo).
+Rutina general y plan hasta enero: `docs/PLAN_PILOTO.md`. Fechas exactas: `docs/CALENDARIO.md`.
+Ritmo: **1 Short al día** (programado a las 7 pm ET) **+ el largo Puskás el domingo a las 3 pm ET**.
+Constancia antes que volumen: no subir muchos de golpe.
 
-## SÁBADO
+## SÁBADO (3–4 h)
 
-### Bloque 1 — Preparación (1 h)
-- [ ] Instalar Python + FFmpeg y luego `pip install -r requirements.txt` (README §1).
-- [ ] Canal: revisar que no tenga strikes, verificar el teléfono, nombre/@/foto/banner/descripción
-      en inglés, ocultar los videos viejos (ver la conversación o README).
-- [ ] Poner nombre y @ en `config.yaml`.
-- [ ] Probar: `python main.py render scripts/2026-11-21_goals-broke-physics.json --preview`
-      (sin clips; comprueba que la voz suena).
+### Bloque 1: preparación (1 h)
+- [ ] Instalar Python y FFmpeg, y luego `pip install -r requirements.txt` (README §1).
+- [ ] Dejar el canal listo (checklist A de `docs/PLAN_PILOTO.md`):
+  - videos viejos en privado;
+  - nombre, @, foto, banner y descripción en inglés;
+  - verificar el teléfono.
+- [ ] Poner el nombre y el @ en `config.yaml`.
+- [ ] Probar `python main.py render scripts/2026-11-21_goals-broke-physics.json --preview`
+  (no necesita clips; sirve para comprobar que la voz suena).
 
-### Bloque 2 — Primeros 3 Shorts (2–3 h) · clips fáciles de encontrar (goles clásicos famosos)
-1. `2026-11-21_goals-broke-physics` (Roberto Carlos 1997, Zlatan 2012, Ronaldo knuckleball…)
-2. `2026-11-21_goalkeepers-main-character` (Higuita, Neuer, Chilavert…)
-3. `2026-11-22_puskas-2026-top15-long_p4` (Güler 68 m, Álvarez, Lopes Cabral) ← tema caliente
+### Bloque 2: los Shorts de la semana (2–3 h)
+Shorts del sábado 21 al viernes 27 (ver `docs/CALENDARIO.md`):
+- `_p4` del Puskás;
+- `goals-broke-physics`;
+- `goalkeepers-main-character`;
+- `wholesome-moments`;
+- más `_p1`, `_p2` y `_p3`, que salen de los clips del largo (puedes dejarlos para el domingo).
 
-`python main.py check` → conseguir clips de 5–10 s → `python main.py render --all` → mirar cada uno.
+Pasos: `python main.py check` → clips de 5–10 s → `python main.py render --all` → revisar cada video.
+- [ ] Programar el `_p4` (hoy a las 7 pm ET) y el resto según el calendario.
 
-### Bloque 3 — Publicar (30 min)
-- [ ] Publicar **2 Shorts** entre las 6 y las 9 pm hora del Este (el #3, Puskás, primero).
-- [ ] Programar el 3º para el domingo a mediodía (hora del Este).
+## DOMINGO (2–4 h)
 
-## DOMINGO
+### Bloque 3: largo Puskás
+- [ ] Clips de 25–32 s de los 15 goles en `clips/2026-11-22_puskas-2026-top15-long/`.
+- [ ] `python main.py render scripts/2026-11-22_puskas-2026-top15-long.json`, y verlo entero (≥8 min).
+- [ ] `render` de `_p1`, `_p2` y `_p3`. Usan los mismos clips del largo.
+- [ ] Miniatura con ChatGPT: `docs/MINIATURAS.md`, PROMPT A, con un fotograma del gol de Güler.
+- [ ] Programarlo a las **3 pm ET** con la descripción de `metadata.json` (los capítulos ya vienen incluidos).
+- [ ] En cada Short del Puskás, poner el largo como "Related video".
 
-### Bloque 4 — Video largo Puskás (3–4 h)
-- [ ] Clips de 25–32 s para los 15 goles en `clips/2026-11-22_puskas-2026-top15-long/`
-      (los Shorts _p1–_p4 los reutilizan; el _p4 ya usa los mismos).
-- [ ] `python main.py render scripts/2026-11-22_puskas-2026-top15-long.json` → mirarlo entero (≥8 min).
-- [ ] Miniatura con ChatGPT (`docs/MINIATURAS.md`, PROMPT A, fotograma del gol de Güler).
-- [ ] Publicar el largo **a las 2–4 pm hora del Este** con la descripción de `metadata.json` (capítulos incluidos).
-
-### Bloque 5 — Llenar la semana (1–2 h)
-- [ ] `render --all` para los Shorts `_p1`, `_p2`, `_p3`, más `penalty-run-ups` y `celebrations-too-early`.
-- [ ] Programar **1–2 Shorts al día de lunes a jueves** (alternando las 2–4 pm y las 6–9 pm, hora del Este).
-- [ ] En cada Short del Puskás: "Related video" → el video largo.
-
-## Lunes y siguientes días (15 min/día)
-- Responder comentarios en los primeros 30 min de cada publicación.
-- A las 48 h, apuntar las métricas en `docs/RESULTADOS.csv` y pedirle a Claude la siguiente tanda de guiones.
+### Bloque 4: métricas (15 min)
+- Responder los comentarios en los primeros 30 min de cada publicación.
+- A las 48 h, apuntar las métricas en `docs/RESULTADOS.csv`.
+- El próximo sábado, pedirle a Claude la siguiente tanda de guiones.
