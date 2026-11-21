@@ -67,7 +67,7 @@ Ideas originales y actuales, hecho de forma casi automática para crecer y monet
 - RPM de Shorts de fútbol: aprox. 0,03–0,30 USD por 1.000 vistas (fuentes de terceros). Hace falta
   volumen MUY alto; YPP exige 1.000 subs + 10M vistas de Shorts en 90 días (o 4.000 h).
 
-## Márgenes de viralidad (detalle y fuentes en `docs/VIRALIDAD.md`)
+## Márgenes de viralidad (resumen en 1 página: `docs/FORMULA_VIRAL.md`; detalle y fuentes en `docs/VIRALIDAD.md`)
 - Viewed vs swiped away: muere <50% · normal 50–60% · bueno 60–70% · **viral ≥70–80%**.
 - % medio visto (APV): bueno 70–90% · **viral >100%** (replays/loop).
 - Like/vista: canal pequeño apuntar a **≥3%** (outliers de fútbol del mes 2–6%; granjas 0,2–1%).
