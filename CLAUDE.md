@@ -72,6 +72,13 @@ con ideas originales y actuales, hecho de forma casi automática para crecer y m
   ("What if", crossovers, quizzes, historias en 30 s), que llegan hasta 175× de breakout y 3,6%
   de interacción con riesgo de copyright casi cero.
 
+## vidIQ (detalle y presupuesto en `docs/VIDIQ.md`)
+- Plan de **150 créditos/mes** (se renueva el día 21); casi todo cuesta 5 y ver un video 10–25.
+  Mirar `vidiq_balance` (gratis) antes de gastar y seguir el presupuesto de `docs/VIDIQ.md`.
+- Hallazgos de comentarios: la audiencia pide **jugadores de actualidad** (Bellingham brothers,
+  Anthony Gordon, Mbangula…) y odia que **no se vea el momento clave** → clips completos.
+- Título de referencia: "Top Goalkeepers With Main Character Energy 🧤😈" = 84/100. Objetivo: ≥75.
+
 ## Estructura del proyecto
 - `main.py` — CLI: `check`, `render`, `upload`, `write`.
 - `src/` — `tts.py` (voz edge-tts + tiempos por palabra), `graphics.py` (caja de título + lista de
