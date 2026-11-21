@@ -1,0 +1,12 @@
+# secrets
+.env
+client_secret*.json
+token*.json
+
+# heavy media (keep them local, never commit clips)
+clips/**/*
+!clips/README.md
+output/
+work/
+__pycache__/
+*.pyc
