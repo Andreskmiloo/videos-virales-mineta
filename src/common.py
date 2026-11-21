@@ -59,7 +59,8 @@ def is_long(script: dict) -> bool:
 def dims(cfg: dict, script: dict) -> tuple[int, int, float]:
     """(width, height, max_clip_seconds) for the script's format."""
     sec = cfg["long_video"] if is_long(script) else cfg["video"]
-    return sec["width"], sec["height"], sec["max_clip_seconds"]
+    # a script can override the clip cap (e.g. long videos that show build-up + replay)
+    return sec["width"], sec["height"], float(script.get("max_clip_seconds", sec["max_clip_seconds"]))
 
 
 def clips_dir_for(script: dict, clips_root: Path | None = None) -> Path:

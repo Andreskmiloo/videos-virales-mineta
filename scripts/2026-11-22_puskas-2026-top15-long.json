@@ -1,0 +1,120 @@
+{
+  "id": "2026-11-22_puskas-2026-top15-long",
+  "format": "long",
+  "max_clip_seconds": 32,
+  "title_overlay": "Puskás 2026: Top 15 Contenders",
+  "hook": "These fifteen goals are fighting for the Puskás Award. Number one was scored from his own half.",
+  "items": [
+    {
+      "rank": 15,
+      "label": "Spurs Sniper",
+      "line": "Beating Gianluigi Donnarumma is already a flex. Doing it with a finish good enough to enter the Puskás conversation? That's how Dominic Solanke sneaks onto this list.",
+      "line_short": "Beat Donnarumma. Puskás conversation unlocked.",
+      "clip_hint": "Dominic Solanke (Tottenham) goal beating Gianluigi Donnarumma, ~Feb 1 2026. WATCH IT FIRST and confirm it's the right goal."
+    },
+    {
+      "rank": 14,
+      "label": "Atlético Closer",
+      "line": "A strike that won the match for Atlético. Defender's job description says stop goals. Nahuel Molina read it, laughed, and decided to win the game himself.",
+      "line_short": "Defender energy, striker finish, match winner.",
+      "clip_hint": "Nahuel Molina (Atlético Madrid) match-winning strike, ~Mar 14 2026"
+    },
+    {
+      "rank": 13,
+      "label": "Crossbar Kiss",
+      "line": "From long range, off the crossbar and in, to make it one-nil for Barça. The crossbar got the assist. João Cancelo got the aura.",
+      "line_short": "Long range, off the bar and in. The crossbar assisted.",
+      "clip_hint": "João Cancelo (Barcelona) long-range goal off the crossbar for 1-0, ~Sep 2026"
+    },
+    {
+      "rank": 12,
+      "label": "Impossible Angle",
+      "line": "There was no angle. Genuinely none. Michael Folorunsho looked at the byline, looked at the goal, and decided geometry is just a suggestion.",
+      "line_short": "No angle. Geometry is a suggestion.",
+      "clip_hint": "Michael Folorunsho goal from an extremely acute angle, Parma vs Cagliari, ~Feb 28 2026"
+    },
+    {
+      "rank": 11,
+      "label": "Fulham Hammer",
+      "line": "Last minute. Against Liverpool. From about thirty yards, into the top corner. Harrison Reed picked the biggest moment and the hardest shot, and absolutely nailed both.",
+      "line_short": "Last minute vs Liverpool. Thirty yards. Top corner.",
+      "clip_hint": "Harrison Reed (Fulham) last-minute long-range strike vs Liverpool, Premier League, Jan 4 2026"
+    },
+    {
+      "rank": 10,
+      "label": "Outside Boot",
+      "line": "Turns inside, turns back, then finishes with the outside of the boot like it's a Sunday kickabout. Christantus Uche in the Conference League. Pure disrespect.",
+      "line_short": "Turn, turn, outside of the boot. Disrespectful.",
+      "clip_hint": "Christantus Uche (Crystal Palace) vs KuPS, Conference League, Dec 18 2025"
+    },
+    {
+      "rank": 9,
+      "label": "Benfica Rabona",
+      "line": "A rabona. In a real league game. Rafa Silva pulled off the trick most of us only try in the backyard, and it actually went in.",
+      "line_short": "Rabona in a real game. And it went in.",
+      "clip_hint": "Rafa Silva (Benfica) rabona goal vs AVS, ~Feb 21 2026"
+    },
+    {
+      "rank": 8,
+      "label": "Center-Back Rabona",
+      "line": "Plot twist: this one's a center back. Scoring a rabona. Driss El Jabali woke up, ignored his position, and chose striker mode. Respect.",
+      "line_short": "A center back. Scoring a rabona. Why not.",
+      "clip_hint": "Driss El Jabali (MAS Fès) rabona vs Wydad AC, Botola Pro, Apr 12 2026"
+    },
+    {
+      "rank": 7,
+      "label": "MLS Scissor Kick",
+      "line": "Back to goal, over his shoulder, past Hugo Lloris. Zavier Gozo just put MLS on the Puskás map. Salt Lake, stand up.",
+      "line_short": "Back to goal, over the shoulder, past Lloris. MLS, stand up.",
+      "clip_hint": "Zavier Gozo (Real Salt Lake) over-the-shoulder scissor-kick volley vs LAFC, MLS, Sep 17 2025"
+    },
+    {
+      "rank": 6,
+      "label": "Crossbar Volley",
+      "line": "First time, from outside the box, off the bar and in, against Mamelodi Sundowns. Cemran Dansin hit this so clean it sounds illegal.",
+      "line_short": "First-time volley, off the bar, in. Sounds illegal.",
+      "clip_hint": "Cemran Dansin first-time volley vs Mamelodi Sundowns, South African Premiership, Nov 1 2025"
+    },
+    {
+      "rank": 5,
+      "label": "Header to Bicycle",
+      "line": "Bad clearance. He controls it with his head, then finishes with an overhead kick. Isaque turned somebody else's mistake into his own highlight reel.",
+      "line_short": "Head control, then overhead kick. Mistake to masterpiece.",
+      "clip_hint": "Isaque (Shakhtar Donetsk) overhead kick vs Lech Poznań, Conference League, Mar 12 2026"
+    },
+    {
+      "rank": 4,
+      "label": "England Heartbreaker",
+      "line": "World Cup quarterfinal. Tough angle. Over Jordan Pickford's head and into the far corner. Norway's Andreas Schjelderup broke English hearts with one swing.",
+      "line_short": "World Cup quarterfinal, over Pickford, far corner. Heartbreak.",
+      "clip_hint": "Andreas Schjelderup (Norway) vs England, World Cup 2026 quarterfinal, Jul 11 2026"
+    },
+    {
+      "rank": 3,
+      "label": "Extra Time Ice",
+      "line": "Extra time, one-one, World Cup quarterfinal, and Julián Álvarez finds the corner from the edge of the box. That's not nerves. That's ice in the veins.",
+      "line_short": "Extra time, World Cup quarterfinal, edge of the box. Ice cold.",
+      "clip_hint": "Julián Álvarez (Argentina) extra-time goal from the edge of the box vs Switzerland, World Cup 2026 quarterfinal, Jul 12 2026"
+    },
+    {
+      "rank": 2,
+      "label": "Cape Verde Hero",
+      "line": "Cape Verde. Against Argentina. At a World Cup. He cuts inside past Mac Allister and bends it over Emi Martínez. Tiny nation, giant goal.",
+      "line_short": "Cape Verde vs Argentina. Cuts in, bends it over Emi. Giant goal.",
+      "clip_hint": "Sidny Lopes Cabral (Cape Verde) vs Argentina, World Cup 2026 (sources disagree on the stage: CHECK before using)"
+    },
+    {
+      "rank": 1,
+      "label": "68-Meter Lob",
+      "line": "Sixty-eight meters. He spots the keeper off his line and lobs him from his own half. Arda Güler didn't take a shot, he made a decision from another planet. Number one.",
+      "line_short": "Sixty-eight meters. From his own half. Number one.",
+      "clip_hint": "Arda Güler (Real Madrid) 68-meter lob over Matías Dituro vs Elche, La Liga, Mar 14 2026"
+    }
+  ],
+  "outro": "Which one should win the Puskás? Comment your pick, and subscribe for the official nominees ranking.",
+  "youtube": {
+    "title": "Puskás 2026: 15 Goals That Could Win It 🤯",
+    "description": "The 15 best Puskás Award 2026 contenders, ranked — from Arda Güler's 68-meter lob to World Cup screamers and an MLS scissor kick. Which goal should win? 👇\n\n#soccer #puskas #goals #football",
+    "tags": ["soccer", "puskas award 2026", "puskas 2026", "fifa puskas award", "puskas award", "best soccer goals", "soccer goals 2026", "soccer highlights", "goal of the year", "arda guler", "julian alvarez", "zavier gozo", "world cup 2026 goals", "football"]
+  }
+}

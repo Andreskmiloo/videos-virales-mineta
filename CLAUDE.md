@@ -103,6 +103,13 @@ Ideas originales y actuales, hecho de forma casi automática para crecer y monet
   1 jugador recortado + número enorme + ≤3 palabras + 1 efecto. Editar un fotograma del clip,
   no generar caras de jugadores reales; sin logos de clubes.
 
+## Ideas y plan actual (detalle en `docs/IDEAS_LARGOS.md`)
+- Ranking de 10 ideas de videos largos con evidencia, ventana temporal, encaje EE.UU. y riesgo de copyright.
+- **Idea #1 en marcha:** "Puskás 2026: 15 Goals That Could Win It" (vidIQ 85/100), guion
+  `scripts/2026-11-22_puskas-2026-top15-long.json` + 4 Shorts (`split --size 4`). Ventana hasta la gala FIFA.
+- Formato recomendado: largo de 8–10 min (≥8 para anuncios a mitad de video) + 4 Shorts; no 15 min.
+- vidIQ: créditos casi agotados hasta el 21-dic → usar búsqueda web.
+
 ## Estructura del proyecto
 - `main.py` — CLI: `check`, `render`, `split`, `upload`, `write`.
 - `src/` — `tts.py` (voz edge-tts + tiempos por palabra), `graphics.py` (caja de título + lista de
