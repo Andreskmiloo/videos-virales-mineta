@@ -21,7 +21,6 @@ Formato: `- [ ] tarea — responsable — notas`. Al acabar: `- [x]` + qué se h
 Ritmo: 1 Short al día (7 pm ET) + 1 largo cada 2 semanas (domingo 3 pm ET), todo en lote el fin de semana.
 
 ## En curso
-- [ ] Corregir la selección de guiones y la comprobación de clips antes del render — Codex
 - [ ] Dejar el canal listo (checklist A de `docs/PLAN_PILOTO.md`) y poner nombre y @ en `config.yaml` — humano
 - [ ] Finde 21–22 nov: Shorts del 21 al 27 + largo Puskás, según `docs/SPRINT_FIN_DE_SEMANA.md` — humano
 - [ ] Clips en el orden de `docs/LISTA_CLIPS.md` y publicación según `docs/CALENDARIO.md` — humano
@@ -49,6 +48,7 @@ Ritmo: 1 Short al día (7 pm ET) + 1 largo cada 2 semanas (domingo 3 pm ET), tod
 - [ ] Analizar las primeras métricas (`docs/RESULTADOS.csv`) y ajustar guiones
 
 ## Hecho
+- [x] Corregida la selección de guiones en `check` y la comprobación de clips antes del render. Probado con la primera parte de Puskás — Codex
 - [x] Pipeline de render (Shorts + largos 16:9 + split) — Claude
 - [x] Investigación de canales, nichos, viralidad, EE.UU., títulos y miniaturas — Claude
 - [x] Guiones: 8 Shorts, Top 20 aura (largo + 4 Shorts), Puskás 2026 (largo + 4 Shorts) — Claude
