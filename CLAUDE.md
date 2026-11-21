@@ -63,6 +63,15 @@ con ideas originales y actuales, hecho de forma casi automática para crecer y m
   `docs/RESULTADOS.csv`; **antes de escribir guiones nuevos, leer ese CSV** y repetir lo que
   supera los márgenes / abandonar lo que no. Con datos propios, recalibrar estos márgenes.
 
+## Vistas vs suscriptores / sub-nichos (detalle en `docs/NICHOS.md`)
+- En Shorts YouTube paga por vista, no por suscriptor. Ratio vistas medias ÷ subs:
+  canales jóvenes en racha 20–75×, maduros ~8× (FootyRanks, RankZilla), estancados ~1×.
+- El mejor ratio lo tienen edits sin voz y highlights viejos, pero esas vistas **no se cobran**
+  (reused content) y se llevan claims → no es nuestro camino.
+- Nuestro foco: **rankings con voz** (interacción 1,6–2,1%) y **conceptos originales**
+  ("What if", crossovers, quizzes, historias en 30 s), que llegan hasta 175× de breakout y 3,6%
+  de interacción con riesgo de copyright casi cero.
+
 ## Estructura del proyecto
 - `main.py` — CLI: `check`, `render`, `upload`, `write`.
 - `src/` — `tts.py` (voz edge-tts + tiempos por palabra), `graphics.py` (caja de título + lista de
