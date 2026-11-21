@@ -28,7 +28,7 @@ Ritmo: 1 Short al día (7 pm ET) + 1 largo cada 2 semanas (domingo 3 pm ET), tod
 - [ ] Cada domingo: métricas a 48 h en `docs/RESULTADOS.csv` — humano
 
 ## Pendiente (visual + código) — Codex (prioridad en `docs/GUIA_VISUAL.md`)
-- [ ] Fuente con más impacto (Anton/Bebas/Montserrat ExtraBold en `assets/fonts/`) — Codex
+- [ ] Fuente con más impacto en los videos — Codex — Anton y Bebas Neue ya están en `assets/fonts/` (OFL); falta usarlas en `config.yaml`/`graphics.py`
 - [ ] Transición corta + whoosh entre puestos — Codex
 - [ ] Barra de progreso en Shorts — Codex
 - [ ] Revisar y arreglar cada video del fin de semana antes de publicarlo (checklist de la guía) — Codex + humano
@@ -48,6 +48,7 @@ Ritmo: 1 Short al día (7 pm ET) + 1 largo cada 2 semanas (domingo 3 pm ET), tod
 - [ ] Analizar las primeras métricas (`docs/RESULTADOS.csv`) y ajustar guiones
 
 ## Hecho
+- [x] Branding: 3 nombres + logo y banner "SUBSCRIBE / help me hit 1,000 subs" para cada uno en `assets/branding/` — Claude
 - [x] Pipeline de render (Shorts + largos 16:9 + split) — Claude
 - [x] Investigación de canales, nichos, viralidad, EE.UU., títulos y miniaturas — Claude
 - [x] Guiones: 8 Shorts, Top 20 aura (largo + 4 Shorts), Puskás 2026 (largo + 4 Shorts) — Claude
