@@ -7,6 +7,7 @@
   otra persona (eso sí que es "contenido reutilizado" y además acumula reclamaciones).
 - Sin música añadida, sin texto ni logos de otros canales encima.
 - Cortar sin volver a comprimir si se puede (p. ej. `ffmpeg -ss INICIO -to FIN -i original.mp4 -c copy 15.mp4`).
+- Dónde buscar cada clip: [FUENTES_CLIPS.md](FUENTES_CLIPS.md)
 - Anotar el segundo del gol como `"key"` en el guion (los Shorts se centran ahí).
 - Los clips se quedan en el PC, en `clips/<id>/`. **Nunca se suben a GitHub** (pesan, tienen copyright y están en `.gitignore`).
 
