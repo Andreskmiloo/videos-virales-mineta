@@ -21,6 +21,7 @@ Formato: `- [ ] tarea — responsable — notas`. Al acabar: `- [x]` + qué se h
 Ritmo: 1 Short al día (7 pm ET) + 1 largo cada 2 semanas (domingo 3 pm ET), todo en lote el fin de semana.
 
 ## En curso
+- [ ] Corregir la selección de guiones y la comprobación de clips antes del render — Codex
 - [ ] Dejar el canal listo (checklist A de `docs/PLAN_PILOTO.md`) y poner nombre y @ en `config.yaml` — humano
 - [ ] Finde 21–22 nov: Shorts del 21 al 27 + largo Puskás, según `docs/SPRINT_FIN_DE_SEMANA.md` — humano
 - [ ] Clips en el orden de `docs/LISTA_CLIPS.md` y publicación según `docs/CALENDARIO.md` — humano
