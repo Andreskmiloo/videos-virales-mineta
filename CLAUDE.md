@@ -28,6 +28,10 @@ Ideas originales y actuales, hecho de forma casi automática para crecer y monet
   el usuario pone los clips, se renderiza, **el usuario revisa** y se sube (privado/programado).
 - Ser honesto con números y riesgos; no prometer viralidad ni dinero.
 
+## Trabajo en equipo
+- Claude, Codex y ChatGPT se coordinan con **`TAREAS.md`** (tablero de tareas) vía git.
+  Leerlo al empezar, tomar la tarea, actualizar al acabar. Roles definidos allí.
+
 ## Límites (no negociables)
 - **No crear canales nuevos para evadir un cierre/baneo** de YouTube (va contra las normas y
   arriesga la cuenta de Google/AdSense). La estrategia es **evitar strikes**, no esquivarlos.

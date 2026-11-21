@@ -1,6 +1,6 @@
 # AGENTS.md (Codex / ChatGPT / other agents)
 
-Read **CLAUDE.md** first — it holds the project goals, working agreements, anti-strike rules
+Read **CLAUDE.md** and **TAREAS.md** (shared task board with Claude Code) first — it holds the project goals, working agreements, anti-strike rules
 and research notes. Everything there applies to you too.
 
 Quick summary:
@@ -10,3 +10,7 @@ Quick summary:
 - Render: `python main.py render scripts/<id>.json` (use `--silent` offline, `--preview` without clips).
 - Never upload public without user review. Never create channels to evade a YouTube ban.
 - Never commit clips, `.env`, `client_secret*.json`, `token*.json`.
+
+## Working with Claude Code
+- Coordinate only through this repo: `git pull` before starting, claim a task in TAREAS.md, small commits, `git push` when done.
+- Codex focus: code fixes/features on the user's PC (render errors, upload, tests). Claude focus: research, scripts, strategy.
