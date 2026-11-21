@@ -1,5 +1,8 @@
 # Rutina de cada mañana (≈30–60 min)
 
+> **Semana tipo:** 1 recopilación larga (lunes) → `split` → 4 Shorts repartidos en la semana
+> + 1–2 Shorts sueltos al día. Mismos clips, el doble de videos. Publicar 2–4 pm o 6–9 pm hora del Este (EE.UU.).
+
 1. **Guiones nuevos (5 min)** — elige una opción:
    - Pídeselo a Claude Code en este repo: *"investiga con vidIQ lo que está pegando hoy en
      fútbol y escribe 3 guiones nuevos en scripts/"*. (También se puede dejar programado.)

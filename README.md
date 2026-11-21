@@ -23,6 +23,14 @@ python main.py render scripts/2026-11-21_goals-broke-physics.json
 python main.py render --all                            # todos los que tengan clips
 python main.py render scripts/X.json --preview         # probar sin clips (tarjetas verdes)
 ```
+
+**Video largo + Shorts del mismo material:**
+```bash
+python main.py render scripts/2026-11-21_top20-goals-most-aura-long.json   # 16:9, capítulos incluidos
+python main.py split scripts/2026-11-21_top20-goals-most-aura-long.json    # crea 4 guiones de Shorts
+python main.py render --all
+```
+Títulos: [docs/TITULOS.md](docs/TITULOS.md) · Miniaturas + prompt ChatGPT: [docs/MINIATURAS.md](docs/MINIATURAS.md)
 Resultado: `output/<id>/video.mp4`, `thumbnail.jpg` y `metadata.json` (título, descripción, tags).
 
 Voces que puedes poner en `config.yaml` → `voice.name`: `en-US-AndrewMultilingualNeural`,

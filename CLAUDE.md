@@ -4,8 +4,18 @@ Guía de trabajo para Claude (y cualquier IA: Codex, ChatGPT) en este proyecto.
 Leer completo antes de tocar nada.
 
 ## Objetivo
-Canal de **YouTube Shorts de fútbol en INGLÉS**, formato **ranking (Top 5 → #1)**,
-con ideas originales y actuales, hecho de forma casi automática para crecer y monetizar.
+Canal de **soccer en INGLÉS para público de EE.UU.**: **Shorts** de ranking (Top 5 → #1) y
+**recopilaciones largas** 16:9 (Top 20, 8+ min) de las que salen los Shorts (`split`).
+Ideas originales y actuales, hecho de forma casi automática para crecer y monetizar.
+
+## Público: EE.UU. (decidido con el usuario)
+- Investigar SIEMPRE en inglés y con foco EE.UU. (vidIQ: country US / audiencia US).
+- Usar **"Soccer"** en títulos y primeras etiquetas: en EE.UU. "football" = NFL. Datos vidIQ:
+  "soccer highlights" 64% de búsquedas en EE.UU. (+46%), "soccer shorts" 57% EE.UU. (+37%);
+  "football" busca sobre todo India/Bangladesh (EE.UU. 7%). El público EE.UU. paga más por vista.
+- Tras el Mundial 2026 (en EE.UU.) hay 75M de fans de soccer en EE.UU.; Messi/Inter Miami y
+  USMNT (Pulisic, Donovan) conectan con este público. Mezclarlos con leyendas mundiales.
+- Publicar 2–4 pm o 6–9 pm hora del Este; voz en-US.
 
 ## Cómo trabajamos (acuerdos con el usuario)
 - El usuario habla en **español**: responderle en español. Los **videos y guiones van en inglés**.
@@ -86,8 +96,15 @@ con ideas originales y actuales, hecho de forma casi automática para crecer y m
   Anthony Gordon, Mbangula…) y odia que **no se vea el momento clave** → clips completos.
 - Título de referencia: "Top Goalkeepers With Main Character Energy 🧤😈" = 84/100. Objetivo: ≥75.
 
+## Títulos y miniaturas
+- Títulos: ver `docs/TITULOS.md`. Fórmula larga: número + palabra en MAYÚSCULAS + actualidad o serie
+  ("Top 20 Soccer Goals With The Most Aura Ever" = 93/100 en vidIQ).
+- Miniaturas (solo importan en largos): `docs/MINIATURAS.md` con el prompt para ChatGPT.
+  1 jugador recortado + número enorme + ≤3 palabras + 1 efecto. Editar un fotograma del clip,
+  no generar caras de jugadores reales; sin logos de clubes.
+
 ## Estructura del proyecto
-- `main.py` — CLI: `check`, `render`, `upload`, `write`.
+- `main.py` — CLI: `check`, `render`, `split`, `upload`, `write`.
 - `src/` — `tts.py` (voz edge-tts + tiempos por palabra), `graphics.py` (caja de título + lista de
   ranking con Pillow), `captions.py` (subtítulos karaoke .ass), `render.py` (FFmpeg),
   `upload.py` (YouTube Data API), `writer.py` (guiones con Claude API, opcional).

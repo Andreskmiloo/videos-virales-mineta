@@ -44,9 +44,26 @@ def load_script(path: Path) -> dict:
         missing = REQUIRED_ITEM_KEYS - it.keys()
         if missing:
             raise ValueError(f"{path}: item {it} missing {missing}")
+    s.setdefault("format", "short")
+    if s["format"] not in ("short", "long"):
+        raise ValueError(f"{path}: format must be 'short' or 'long'")
     # countdown order: highest rank first (5,4,3,2,1)
     s["items"] = sorted(s["items"], key=lambda i: -int(i["rank"]))
     return s
+
+
+def is_long(script: dict) -> bool:
+    return script.get("format", "short") == "long"
+
+
+def dims(cfg: dict, script: dict) -> tuple[int, int, float]:
+    """(width, height, max_clip_seconds) for the script's format."""
+    sec = cfg["long_video"] if is_long(script) else cfg["video"]
+    return sec["width"], sec["height"], sec["max_clip_seconds"]
+
+
+def clips_dir_for(script: dict, clips_root: Path | None = None) -> Path:
+    return (clips_root or ROOT / "clips") / script.get("clips_from", script["id"])
 
 
 def need(binary: str) -> None:

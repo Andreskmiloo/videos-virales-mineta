@@ -26,3 +26,18 @@
   el programa lo encaja en 1080x1920 con fondo desenfocado.
 - Si falta un clip, `render --preview` pone una tarjeta verde con el `clip_hint` para que
   veas el timing antes de conseguirlo.
+
+## Videos largos (recopilaciones 16:9)
+Mismos campos y además:
+- `"format": "long"` → video 1920x1080, insignia "#N" + apodo, capítulos automáticos en la descripción.
+- `line` puede ser más larga (2–3 frases, ~12–18 s); `line_short` = versión corta para los Shorts.
+- 20 items con clips de ~15–18 s ≈ 6–7 min. Para **8 min o más** (anuncios a mitad de video) usa 25 items
+  o clips más largos (`long_video.max_clip_seconds` en config.yaml).
+
+## De un largo a Shorts
+`python main.py split scripts/<largo>.json` crea `<id>_p1 … _p4` (5 puestos cada uno, con los números
+reales #20–16, #15–11…). Los Shorts usan los clips del largo (`"clips_from"`), no hay que copiar nada.
+
+## Un solo archivo de recopilación
+Si tienes una recopilación larga en un único archivo, pon en cada item:
+`"clip": "compilation.mp4", "start": 125.0, "end": 141.5` (segundos del momento).

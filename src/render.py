@@ -1,4 +1,4 @@
-"""Build a ranking Short from a script JSON + the user's clips."""
+"""Build a ranking video (vertical Short or 16:9 long compilation) from a script + clips."""
 from __future__ import annotations
 
 import json
@@ -8,7 +8,8 @@ from pathlib import Path
 from PIL import ImageFont
 
 from . import captions, graphics, tts
-from .common import ROOT, find_clip, font_path, has_audio, need, probe_duration, run
+from .common import (ROOT, clips_dir_for, dims, find_clip, font_path, has_audio, is_long,
+                     need, probe_duration, run)
 
 
 def _boom(path: Path) -> Path:
@@ -38,12 +39,14 @@ def render(script: dict, cfg: dict, *, clips_root: Path | None = None,
     need("ffmpeg")
     need("ffprobe")
     v = cfg["video"]
-    W, H, FPS = v["width"], v["height"], v["fps"]
+    long_fmt = is_long(script)
+    W, H, max_clip = dims(cfg, script)
+    FPS = v["fps"]
     font_file = font_path(cfg)
     font_name = ImageFont.truetype(font_file, 10).getname()[0]
 
     sid = script["id"]
-    clips_dir = (clips_root or ROOT / "clips") / sid
+    clips_dir = clips_dir_for(script, clips_root)
     out_dir = (out_root or ROOT / "output") / sid
     work = ROOT / "work" / sid
     shutil.rmtree(work, ignore_errors=True)
@@ -59,6 +62,8 @@ def render(script: dict, cfg: dict, *, clips_root: Path | None = None,
     seg_files = []
     texts = segment_texts(script)
     missing = []
+    chapters: list[tuple[float, str]] = []
+    t_cursor = 0.0
 
     for n, (it, text) in enumerate(zip(items, texts)):
         r = int(it["rank"])
@@ -73,17 +78,26 @@ def render(script: dict, cfg: dict, *, clips_root: Path | None = None,
         if clip:
             avail = probe_duration(clip) - start
             want = float(it["end"]) - start if it.get("end") else avail
-            clip_dur = max(1.0, min(want, avail, v["max_clip_seconds"]))
+            clip_dur = max(1.0, min(want, avail, max_clip))
         else:
             missing.append(r)
             clip_dur = 0.0
         seg_dur = round(max(clip_dur, vdur + 0.35), 2)
 
-        ovl = graphics.overlay(work / f"{tag}_ovl.png", W=W, H=H, font_file=font_file,
-                               title=script["title_overlay"], handle=cfg["channel"]["handle"],
-                               ranks=ranks, revealed=dict(revealed), current=r)
-        ass = captions.write_ass(words, work / f"{tag}.ass", W=W, H=H, font_name=font_name,
-                                   font_file=font_file)
+        if long_fmt:
+            ovl = graphics.overlay_long(work / f"{tag}_ovl.png", W=W, H=H, font_file=font_file,
+                                        title=script["title_overlay"],
+                                        handle=cfg["channel"]["handle"],
+                                        rank=r, label=it["label"], total=max(ranks))
+            ass = captions.write_ass(words, work / f"{tag}.ass", W=W, H=H, font_name=font_name,
+                                     font_file=font_file, y=int(H * 0.89),
+                                     size=cfg["long_video"].get("caption_size", 64))
+        else:
+            ovl = graphics.overlay(work / f"{tag}_ovl.png", W=W, H=H, font_file=font_file,
+                                   title=script["title_overlay"], handle=cfg["channel"]["handle"],
+                                   ranks=ranks, revealed=dict(revealed), current=r)
+            ass = captions.write_ass(words, work / f"{tag}.ass", W=W, H=H, font_name=font_name,
+                                     font_file=font_file)
 
         cmd = ["ffmpeg", "-y"]
         if clip:
@@ -105,7 +119,7 @@ def render(script: dict, cfg: dict, *, clips_root: Path | None = None,
             f"[0:v]fps={FPS},setsar=1,split=2[a][b];"
             f"[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
             f"gblur=sigma=28,eq=brightness=-0.12[bg];"
-            f"[b]scale={W}:-2,crop={W}:'min(ih,{H})'[fg];"
+            f"[b]scale={W}:{H}:force_original_aspect_ratio=decrease[fg];"
             f"[bg][fg]overlay=(W-w)/2:(H-h)/2[v1];"
             f"[v1][1:v]overlay=0:0[v2];"
             f"[v2]ass={ass.name}:fontsdir=fonts,format=yuv420p[v];"
@@ -121,6 +135,8 @@ def render(script: dict, cfg: dict, *, clips_root: Path | None = None,
                 "-ac", "2", seg.name]
         run(cmd, cwd=work)
         seg_files.append(seg)
+        chapters.append((t_cursor, f"#{r} {it['label']}"))
+        t_cursor += probe_duration(seg)
         print(f"  #{r} {it['label']!r}: {seg_dur:.1f}s" + ("  (MISSING CLIP)" if not clip else ""))
 
     lst = work / "list.txt"
@@ -135,9 +151,20 @@ def render(script: dict, cfg: dict, *, clips_root: Path | None = None,
     meta["script_id"] = sid
     meta["duration_seconds"] = round(probe_duration(video), 2)
     meta["missing_clips"] = missing
+    meta["format"] = script["format"]
+    if long_fmt and len(chapters) >= 3:
+        def mmss(t: float) -> str:
+            return f"{int(t // 60)}:{int(t % 60):02d}"
+        chap = "\n".join(f"{mmss(t)} {name}" for t, name in chapters)
+        meta["description"] = f"{meta.get('description', '').rstrip()}\n\n{chap}\n"
     (out_dir / "metadata.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False))
     total = meta["duration_seconds"]
     print(f"✔ {video}  ({total:.1f}s)" + (f"  missing clips: {missing}" if missing else ""))
-    if total > 60:
-        print("  ⚠ longer than 60s — keep Shorts under ~58s (trim lines or max_clip_seconds).")
+    if long_fmt:
+        min_s = cfg["long_video"].get("min_minutes", 8) * 60
+        if total < min_s:
+            print(f"  ⚠ {total / 60:.1f} min — under {min_s / 60:.0f} min there are no mid-roll ads "
+                  "(add items, longer lines or longer clips).")
+    elif total > 60:
+        print("  ⚠ longer than 60s — best Shorts are 25–40s (trim lines or max_clip_seconds).")
     return video

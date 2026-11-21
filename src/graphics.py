@@ -83,13 +83,52 @@ def overlay(
         if r in revealed:
             label = revealed[r]
             lf = rfont
-            max_w = W - x - 110 - 40
+            num_w = d.textlength(f"{max(ranks)}.", font=rfont) + 24  # fits "20." too
+            max_w = W - x - num_w - 40
             size = 58
             while d.textlength(label, font=lf) > max_w and size > 30:
                 size -= 4
                 lf = ImageFont.truetype(font_file, size)
-            d.text((x + 100, y + (58 - size) // 2), label, font=lf,
+            d.text((x + num_w, y + (58 - size) // 2), label, font=lf,
                    fill=RED if is_cur else WHITE, stroke_width=5, stroke_fill=BLACK)
+    img.save(out)
+    return out
+
+
+def overlay_long(
+    out: Path, *, W: int, H: int, font_file: str, title: str, handle: str,
+    rank: int, label: str, total: int,
+) -> Path:
+    """Transparent 16:9 PNG: title strip top-left, big '#N' badge + label lower-left."""
+    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+
+    # title strip
+    tfont, lines = _fit_font(d, title.upper(), font_file, 46, int(W * 0.55), 1)
+    tw = d.textlength(lines[0], font=tfont)
+    d.rounded_rectangle([40, 36, 40 + tw + 56, 36 + tfont.size + 36], radius=18, fill=WHITE,
+                        outline=YELLOW, width=6)
+    d.text((68, 54), lines[0], font=tfont, fill=BLACK)
+    hfont = ImageFont.truetype(font_file, 30)
+    d.text((48, 36 + tfont.size + 48), handle, font=hfont, fill=WHITE,
+           stroke_width=3, stroke_fill=BLACK)
+
+    # counter top-right
+    cfont = ImageFont.truetype(font_file, 40)
+    ctext = f"{rank} / {total}"
+    d.text((W - 40 - d.textlength(ctext, font=cfont), 46), ctext, font=cfont, fill=WHITE,
+           stroke_width=4, stroke_fill=BLACK)
+
+    # badge lower-left
+    bfont = ImageFont.truetype(font_file, 120)
+    badge = f"#{rank}"
+    bw = d.textlength(badge, font=bfont)
+    y = H - 390
+    d.rounded_rectangle([40, y, 40 + bw + 60, y + 150], radius=24, fill=YELLOW)
+    d.text((70, y + 8), badge, font=bfont, fill=BLACK)
+    lfont, llines = _fit_font(d, label, font_file, 70, W - bw - 220, 1)
+    d.text((40 + bw + 90, y + (150 - lfont.size) // 2 - 6), llines[0], font=lfont, fill=WHITE,
+           stroke_width=6, stroke_fill=BLACK)
     img.save(out)
     return out
 
