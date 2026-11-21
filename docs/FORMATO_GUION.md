@@ -41,3 +41,7 @@ reales #20–16, #15–11…). Los Shorts usan los clips del largo (`"clips_from
 ## Un solo archivo de recopilación
 Si tienes una recopilación larga en un único archivo, pon en cada item:
 `"clip": "compilation.mp4", "start": 125.0, "end": 141.5` (segundos del momento).
+
+## Momento clave (`key`)
+`"key": 14.5` = segundo del gol/momento dentro del clip. Los Shorts cortados de clips largos centran
+su ventana de ~10 s en `key` (sin `key`, en el centro del clip). Codex lo usará también para el zoom.

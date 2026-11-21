@@ -74,7 +74,7 @@ def cmd_split(args, cfg):
             "title_overlay": f"{src['title_overlay']} (Part {k})",
             "hook": chunk[0].get("hook_short") or (
                 f"Part {k} of the top {top}." + (" Number one is insane." if last else "")),
-            "items": [{key: it[key] for key in ("rank", "label", "clip_hint", "clip", "start", "end")
+            "items": [{key: it[key] for key in ("rank", "label", "clip_hint", "clip", "key")
                        if key in it} | {"line": it.get("line_short") or it["line"]}
                       for it in chunk],
             "outro": (src.get("outro") or "Who deserved number one? Comment.") if last

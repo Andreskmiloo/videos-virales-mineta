@@ -75,6 +75,13 @@ def render(script: dict, cfg: dict, *, clips_root: Path | None = None,
 
         clip = find_clip(clips_dir, it)
         start = float(it.get("start", 0))
+        if clip and not long_fmt and "start" not in it:
+            # Short cut from a longer clip (e.g. one shared with a long video): centre the window
+            # on the key moment ("key" = second of the goal) or, by default, on the clip middle.
+            full = probe_duration(clip)
+            if full > max_clip:
+                key = float(it["key"]) if "key" in it else full / 2
+                start = round(min(max(0.0, key - max_clip * 0.6), full - max_clip), 2)
         if clip:
             avail = probe_duration(clip) - start
             want = float(it["end"]) - start if it.get("end") else avail

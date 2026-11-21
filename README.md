@@ -6,6 +6,7 @@ subtítulos karaoke y golpe de bajo en cada puesto. Tú pones los clips; el prog
 
 > Guía de trabajo y reglas: [CLAUDE.md](CLAUDE.md) · Rutina diaria: [docs/RUTINA_DIARIA.md](docs/RUTINA_DIARIA.md)
 > · Investigación: [docs/INVESTIGACION.md](docs/INVESTIGACION.md)
+> · **Esta semana:** [Calendario](docs/CALENDARIO.md) · [Lista de clips](docs/LISTA_CLIPS.md) · [Sprint](docs/SPRINT_FIN_DE_SEMANA.md) · [Tareas](TAREAS.md)
 
 ## 1. Instalar (una vez)
 1. Python 3.10+ y **FFmpeg** (https://ffmpeg.org/download.html — en Windows: `winget install ffmpeg`;
