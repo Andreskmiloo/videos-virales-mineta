@@ -1,0 +1,55 @@
+{
+  "id": "2026-11-21_players-forgot-ball",
+  "title_overlay": "Top Players Who Forgot How The Ball Works",
+  "hook": "Number one is a professional. Somehow.",
+  "items": [
+    {
+      "rank": 5,
+      "label": "Air Kick Master",
+      "line": "Swung with full power and hit absolutely nothing but the atmosphere.",
+      "clip_hint": "Player completely misses the ball on a shot (air kick)"
+    },
+    {
+      "rank": 4,
+      "label": "Open Goal Ghost",
+      "line": "Empty net, one meter away, and he found the only way to miss.",
+      "clip_hint": "Open goal miss from very close range"
+    },
+    {
+      "rank": 3,
+      "label": "Corner Flag Sniper",
+      "line": "Aimed for the top corner, hit the corner flag instead. Close enough.",
+      "clip_hint": "Wildly off-target shot that goes out for a throw-in or near the corner flag"
+    },
+    {
+      "rank": 2,
+      "label": "Self Nutmeg",
+      "line": "Bro dribbled past himself and lost the ball to nobody.",
+      "clip_hint": "Player trips over the ball or loses it with no defender near"
+    },
+    {
+      "rank": 1,
+      "label": "Own Goal Artist",
+      "line": "Tried to clear it, sent a rocket into his own top bin. Finest goal of his career.",
+      "clip_hint": "Spectacular own goal (volley or chip into own net)"
+    }
+  ],
+  "outro": "Which one is your Sunday league? Comment.",
+  "youtube": {
+    "title": "Top Players Who Forgot How The Ball Works 💀",
+    "description": "Top Players Who Forgot How The Ball Works. Who deserved #1? 👇\n\n#football #soccer #shorts #fails #owngoal",
+    "tags": [
+      "football",
+      "soccer",
+      "shorts",
+      "football shorts",
+      "ranking",
+      "football ranking",
+      "football fails",
+      "open goal miss",
+      "own goal",
+      "worst misses",
+      "funny football"
+    ]
+  }
+}

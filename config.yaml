@@ -1,0 +1,35 @@
+# ---- Channel ----
+channel:
+  name: "YourChannelName"          # shown as @handle under the title box
+  handle: "@yourhandle"
+  # ID of YOUR channel (starts with UC...). upload refuses to post if the
+  # logged-in account does not own this channel. Leave empty to skip the check.
+  channel_id: ""
+
+# ---- Voice (text-to-speech) ----
+voice:
+  provider: edge                  # edge (free, needs internet) | silent (for tests)
+  name: en-US-AndrewMultilingualNeural   # try: en-US-GuyNeural, en-US-ChristopherNeural, en-GB-RyanNeural
+  rate: "+12%"                    # faster = more energy
+  volume: 1.0
+
+# ---- Video ----
+video:
+  width: 1080
+  height: 1920
+  fps: 30
+  max_clip_seconds: 10            # each ranked clip is trimmed to this
+  clip_audio_volume: 0.25         # original clip sound under the voice (0 = mute)
+  boom_volume: 0.8                # bass hit at every new rank
+  font: /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+
+# ---- Script writer (optional, uses Claude API) ----
+writer:
+  model: claude-opus-5-5
+  effort: high
+
+# ---- Upload ----
+upload:
+  privacy: private                # private | unlisted | public  (review first!)
+  category_id: "17"               # 17 = Sports
+  made_for_kids: false
