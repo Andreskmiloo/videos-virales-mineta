@@ -102,9 +102,9 @@ def find_clip(clips_dir: Path, item: dict) -> Path | None:
     """Clip for an item: explicit item['clip'] or <rank>.<ext> inside clips/<script id>/."""
     if item.get("clip"):
         p = clips_dir / item["clip"]
-        return p if p.exists() else None
+        return p if p.is_file() else None
     for ext in CLIP_EXTS:
         p = clips_dir / f"{item['rank']}{ext}"
-        if p.exists():
+        if p.is_file():
             return p
     return None

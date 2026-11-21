@@ -48,6 +48,7 @@ Ritmo: 1 Short al día (7 pm ET) + 1 largo cada 2 semanas (domingo 3 pm ET), tod
 - [ ] Analizar las primeras métricas (`docs/RESULTADOS.csv`) y ajustar guiones
 
 ## Hecho
+- [x] Corregida la selección de guiones en `check` y la comprobación de clips antes del render. Probado con la primera parte de Puskás — Codex
 - [x] Pipeline de render (Shorts + largos 16:9 + split) — Claude
 - [x] Investigación de canales, nichos, viralidad, EE.UU., títulos y miniaturas — Claude
 - [x] Guiones: 8 Shorts, Top 20 aura (largo + 4 Shorts), Puskás 2026 (largo + 4 Shorts) — Claude

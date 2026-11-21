@@ -26,7 +26,7 @@ def _scripts(paths: list[str], all_: bool) -> list[Path]:
 
 def cmd_check(args, cfg):
     ready = 0
-    for p in _scripts(args.scripts, True):
+    for p in _scripts(args.scripts, False):
         s = load_script(p)
         d = clips_dir_for(s)
         missing = [i for i in s["items"] if not find_clip(d, i)]
@@ -36,7 +36,8 @@ def cmd_check(args, cfg):
             continue
         print(f"MISSING {s['id']}  → put clips in clips/{d.name}/")
         for i in missing:
-            print(f"   {i['rank']}.mp4  {i.get('clip_hint', '')}")
+            filename = i.get("clip") or f"{i['rank']}.mp4"
+            print(f"   {filename}  {i.get('clip_hint', '')}")
     print(f"\n{ready} script(s) ready to render.")
 
 
@@ -47,10 +48,14 @@ def cmd_render(args, cfg):
         cfg["voice"]["provider"] = "silent"
     for p in _scripts(args.scripts, args.all):
         s = load_script(p)
-        if args.all and not args.preview:
+        if not args.preview:
             d = clips_dir_for(s)
             if any(not find_clip(d, i) for i in s["items"]):
-                print(f"skip {s['id']} (clips missing — use --preview to render with placeholders)")
+                message = (f"{s['id']}: clips missing in clips/{d.name}/"
+                           " — use --preview to render with placeholders")
+                if not args.all:
+                    raise SystemExit(message)
+                print(f"skip {message}")
                 continue
         print(f"▶ {s['id']}")
         render(s, cfg)
